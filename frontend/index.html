@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand">Players Info</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="searchPlace" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" id="searchPlayer" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </div>
+
+    <div class="container w-50" id="infoTaking" >
+        <br>
+        <h4>Enter Players Info</h4>
+        <form id="formId">
+            <div class="mb-3">
+              <label for="playerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="PlayerName">
+            </div>
+            <div class="mb-3">
+              <label for="playerDob" class="form-label">Date of Birth</label>
+              <input type="text" class="form-control" id="playerDob">
+            </div>
+            <div class="mb-3">
+              <label for="playerUrl" class="form-label">Image URL</label>
+              <input type="text" class="form-control" id="playerUrl">
+            </div>
+            <div class="mb-3">
+              <label for="playerBirthplace" class="form-label">Birthplace</label>
+              <input type="text" class="form-control" id="playerBirthplace">
+            </div>
+            <div class="mb-3">
+              <label for="playerCareer" class="form-label">Career</label>
+              <textarea  type="text" class="form-control" id="playerCareer" cols="30" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="playerMatches" class="form-label">Number of Matches</label>
+              <input type="text" class="form-control" id="playerMatches">
+            </div>
+            <div class="mb-3">
+              <label for="playerScore" class="form-label">Score</label>
+              <input type="text" class="form-control" id="playerScore">
+            </div>
+            <div class="mb-3">
+              <label for="playerFifties" class="form-label">Fifties</label>
+              <input type="text" class="form-control" id="playerFifties">
+            </div>
+            <div class="mb-3">
+              <label for="playerCenturies" class="form-label">Centuries</label>
+              <input type="text" class="form-control" id="playerCenturies" >
+            </div>
+            <div class="mb-3">
+              <label for="playerWickets" class="form-label">Wickets</label>
+              <input type="text" class="form-control" id="playerWickets">
+            </div>
+            <div class="mb-3">
+              <label for="playerAverage" class="form-label">Average</label>
+              <input type="text" class="form-control" id="playerAverage">
+            </div>
+            <button type="submit" id="submitPlayer" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="container w-50 text-center" id="showingInfo" style="display: none;">
+        <br>
+        <div id="showingPlayerInfo">
+            <!-- <h3 id="infoName">Shehan Jayasuriya</h3>
+            <img src="https://www.cricbuzz.com/a/img/v1/152x152/i1/c160009/shehan-jayasuriya.jpg" id="infoUrl" class="rounded">
+            <p id="infoDob" >20-3-3232</p>
+            <h5 id="infoBirthplace">Delhi</h5>
+            <h6 id="infoCareer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolores porro officia nihil fuga veniam ab. Nesciunt dolore quam facere pariatur ipsa aut, numquam obcaecati nam et quisquam est vitae?</h6>
+            <div>
+                No.of Matches :
+                <h6 id="infoMatches">60</h6>
+            </div>
+            <div>
+                Score :
+                <h6 id="infoScore">60</h6>
+            </div>
+            <div>
+                Fifties :
+                <h6 id="infoFifties">60</h6>
+            </div>
+            <div>
+                Centuries :
+                <h6 id="infoCenturies">60</h6>
+            </div>
+            <div>
+                Wickets :
+                <h6 id="infoWickets">60</h6>
+            </div>
+            <div>
+                Average :
+                <h6 id="infoAverage">60</h6>
+            </div>
+            <button type="submit" id="editPlayer" class="btn btn-outline-success">Edit</button> -->
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
